@@ -140,6 +140,7 @@ int handle_main(char *host,int port){
 			break;
 			case 'q':
 				printf("Got stop code,exit!!\n");
+				close(socket_client);
 				return 0;
 			break;
 		}
